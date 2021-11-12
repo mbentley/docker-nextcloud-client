@@ -30,4 +30,5 @@ fi
 OPTIONS="${OPTIONS:---non-interactive}"
 
 # execute nextcloud sync
+# shellcheck disable=SC2086
 exec nextcloudcmd -u "${USERNAME}" -p "${PASSWORD}" ${OPTIONS} /data "${NEXTCLOUD_URL}"
